@@ -24,6 +24,8 @@ function calculo() {
         quatidade_m2 = largura * altura;
         document.getElementById("valor").value = quatidade_m2.toFixed(2);
 
+    /* Verifica o tipo de tijolo e executa o calculo coforme a medida que corresponde ao tijolo escolhido.*/
+        
         if (tipo_tijolo == "6 furos"){
             /* 0.0252 - medida em m2 do tijolo de 6 furos*/
             document.getElementById("resultado").value = ((largura * altura) / 0.0252).toFixed(0);
